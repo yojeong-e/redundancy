@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/redundancy/static/js/main.074f89f9.js",
+    "main.js": "/redundancy/static/js/main.70f68f4a.js",
     "index.html": "/redundancy/index.html",
-    "main.074f89f9.js.map": "/redundancy/static/js/main.074f89f9.js.map"
+    "main.70f68f4a.js.map": "/redundancy/static/js/main.70f68f4a.js.map"
   },
   "entrypoints": [
-    "static/js/main.074f89f9.js"
+    "static/js/main.70f68f4a.js"
   ]
 }
