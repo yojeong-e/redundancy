@@ -1,13 +1,12 @@
-import AppRouter  from "./Router";
-import IconLabelTabs from "./IconLabelTabs";
+import AppRouter from "./Router";
 
 const App = (props) => {
- return (
-     <div>
+    return (
+        <div>
 
-      <AppRouter />
-     </div>
- );
+            <AppRouter/>
+        </div>
+    );
 };
 
 export default App;

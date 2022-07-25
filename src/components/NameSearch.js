@@ -2,7 +2,8 @@ import {useEffect, useState} from "react";
 import axios from "axios";
 import {DataGrid} from "@mui/x-data-grid";
 
-const USER_API_BASE_URL = "https://redundancyfacility1.run.goorm.io";
+// const USER_API_BASE_URL = "https://redundancyfacility1.run.goorm.io";
+const USER_API_BASE_URL = "http://localhost:8080";
 
 const columns = [{field: 'id', headerName: 'ID', width: 70}, {
     field: 'companySimilarity', headerName: 'companySimilarity', width: '80'
@@ -24,9 +25,8 @@ const NameSearch = () => {
 
     useEffect(() => {
         let completed = false;
-
         async function get() {
-            const result = await axios(`goorm/api/name?country=${country}&name="${name}"`)
+            const result = await axios(USER_API_BASE_URL+`/api/name?country=${country}&name="${name}"`)
 
             if (!completed) {
                 setData(result.data);

@@ -8,7 +8,9 @@ module.exports = function(app){
             pathRewrite: {
                 '^/goorm':''
             },
-            changeOrigin: true
+            changeOrigin: true,
+            ws:true
+
         })
     )
 

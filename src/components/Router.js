@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../routes/Home";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import AddressSearch from "./AddressSearch";
 import NameSearch from "./NameSearch";
 import IconLabelTabs from "./IconLabelTabs";
+import Search from "./Search";
+
 const AppRouter = () => {
 
     return (
-        <BrowserRouter>
-            <IconLabelTabs />
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <IconLabelTabs/>
             <Routes>
-
-            <Route path="/name" element={<NameSearch />} />
-                <Route path="/address" element={<AddressSearch />} />
+                <Route path="/name" element={<NameSearch/>}/>
+                <Route path="/address" element={<AddressSearch/>}/>
+                <Route path="/search" element={<Search/>}/>
             </Routes>
         </BrowserRouter>
     )
