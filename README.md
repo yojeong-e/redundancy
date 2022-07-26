@@ -1,5 +1,7 @@
 # 기등록 업소 유사도 조회
 
+* https://yojeong-e.github.io/redundancy/
+
 ## 검색 방법
 
 * 데이터베이스에 사업체의 이름, 국가, 주소 등이 있을 때
